@@ -1,0 +1,11 @@
+<% @items.each do |item| %>
+  <div>
+    <%= item.category%>
+    <%= item.name %>
+    <%= item.episode %>
+    <%= link_to "Edit", edit_item_path(item) %>
+    <%= link_to "Delete", item_path(item), method: :delete, data: {confirm: "Are you sure?"}  %>
+    <hr>
+  </div>
+<% end %>
+<%= link_to "Create", new_item_path %>

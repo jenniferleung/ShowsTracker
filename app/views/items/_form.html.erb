@@ -1,0 +1,20 @@
+<%= @item.errors.full_messages.join(", ") %>
+<%= form_for @item do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+  </div>
+  <div>
+    <%= f.label :episode %>
+    <%= f.text_field :episode %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <%= f.submit %>
+<% end %>
