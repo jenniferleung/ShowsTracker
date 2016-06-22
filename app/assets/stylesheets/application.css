@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+.table a{
+   text-decoration: none !important;
+ }
+
+ .table th{
+   font-size: 18px;
+ }
+
+ .table td{
+  font-size: 15px;
+ }
+
+ .navbar a{
+   font-size: 15px;
+ }
+
+ .container{
+   padding-left: 5px;
+ }
+
+ .navbar-brand{
+    font-weight: bold !important;
+ }
