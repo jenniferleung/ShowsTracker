@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '3.1.11'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -35,6 +35,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'shoulda-matchers', '3.0.0.rc1'
+  gem 'test-unit', '3.1.8'
 end
 
 group :development do
